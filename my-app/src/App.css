@@ -1,0 +1,272 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+}
+body {
+	color: #192f60;
+}
+.hero {
+	width: 100%;
+	height: 450px;
+	background: linear-gradient(to bottom, rgba(157, 14, 14, 0), #4f0707),
+		url("./../src/images/foodWallpaper.png");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.hero-center b {
+	display: inline-block;
+	font-size: 46px;
+	line-height: 70px;
+	text-align: center;
+	color: #ff0000;
+	background-color: white;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+}
+
+.hero-center {
+	padding-top: 120px;
+	text-align: center;
+	color: white;
+}
+
+.hero-center h2 {
+	margin-top: 50px;
+	font-size: 32px;
+}
+
+.hero-center form {
+	margin-top: 50px;
+}
+
+.hero-center input {
+	width: 350px;
+	height: 45px;
+	font-size: 18px;
+	padding-left: 40px;
+	margin-left: 10px;
+	border: none;
+	position: relative;
+}
+.hero-center .text-search {
+	width: 350px;
+	background-color: #fff;
+	font-size: 18px;
+	text-align: left;
+	position: absolute;
+	top: 55px;
+	left: 10px;
+	border: none;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+	color: #192f60;
+}
+a {
+	text-decoration: none;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+	color: inherit;
+}
+.hero-center .text-search-div {
+	padding: 15px;
+	display: flex;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.img-search {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.hero-center .title-search {
+	margin-left: 20px;
+}
+.title-search h2 {
+	margin: 0px;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.hero-center .select {
+	width: 200px;
+	height: 45px;
+	font-size: 15px;
+	padding-left: 10px;
+	border: none;
+}
+
+.search {
+	display: inline-block;
+	position: relative;
+}
+
+.fa-search {
+	position: absolute;
+	color: black;
+	opacity: 0.7;
+	top: 15px;
+	z-index: 2;
+	left: 20px;
+}
+
+.card-container {
+	padding: 40px 0px;
+}
+
+.card-title {
+	text-align: center;
+}
+
+.card-title h2 {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.card-title h3 {
+	margin-top: 15px;
+	font-size: 20px;
+	font-weight: 500;
+}
+.mb-20 {
+	margin-bottom: 50px;
+}
+/* .card-body {
+	margin: 30px 55px;
+} */
+
+.card {
+	display: inline-block;
+	/* margin: 20px;
+	max-width: 370px; */
+	height: 150px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.first-card {
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+}
+
+.first-card img {
+	width: 100%;
+	height: 100%;
+}
+
+.second-card {
+	float: right;
+	width: 50%;
+	height: 100%;
+}
+
+.second-card > h4 {
+	margin-top: 30px;
+	padding: 0 20px;
+	margin-bottom: 10px;
+}
+
+.second-card > p {
+	margin-top: 10px;
+	padding: 0 20px;
+}
+
+/*row*/
+.row {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.col-1-of-3 {
+	float: left;
+	width: calc((100% - 120px) / 3);
+	margin: 0px 20px 20px 20px;
+}
+
+/*responsive*/
+@media only screen and (max-width: 600px) {
+	.hero-center input {
+		margin-top: 20px;
+		width: 90%;
+		padding-left: 40px;
+		margin-left: 0;
+	}
+
+	.hero-center .text-search {
+		width: 90%;
+		position: absolute;
+		top: 80px;
+		left: 0;
+		margin: 0 5%;
+	}
+	.title-search h2 {
+		margin: 0px;
+		font-size: 20px;
+		margin-bottom: 5px;
+	}
+
+	.search {
+		width: 100%;
+	}
+
+	.fa-search {
+		top: 35px;
+		left: 30px;
+	}
+
+	.hero-center {
+		padding-top: 40px;
+	}
+
+	.hero-center h2 {
+		margin-top: 20px;
+	}
+
+	.hero-center .select {
+		width: 90%;
+	}
+
+	.col-1-of-3 {
+		width: calc((100% - 30px) / 1) !important;
+		margin: 0px 15px 20px 15px;
+	}
+
+	header {
+		height: 60px;
+	}
+
+	.header-logo {
+		/* display: inline-block; */
+		line-height: 40px;
+		height: 40px;
+		width: 40px;
+		top: 10px;
+	}
+
+	nav li {
+		line-height: 60px;
+		font-size: 15px;
+	}
+
+	.create {
+		padding: 6px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.col-1-of-3 {
+		width: calc((100% - 80px) / 2);
+	}
+}
