@@ -10,15 +10,9 @@ const restaurantRouter = require("./routes/restaurant");
 const mealRouter = require("./routes/meal");
 const cusineRouter = require("./routes/cusine");
 const cityRouter = require("./routes/city");
-// const DB = process.env.DATABASE.replace(
-// 	"<PASSWORD>",
-// 	process.env.DATABASE_PASSWORD
-// );
-// console.log(process.env);
-const DB =
-	"mongodb+srv://brianstevo:root@cluster0.ci5jy.mongodb.net/mern-edureka?retryWrites=true&w=majority";
+
 mongoose
-	.connect(DB, {
+	.connect(process.env.DATABASE, {
 		useNewUrlParser: true,
 		useCreateIndex: true,
 		useUnifiedTopology: true,
